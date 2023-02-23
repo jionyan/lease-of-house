@@ -1,0 +1,11 @@
+{
+    "id": "zhuge-swiper",
+    "name": "轮播视频和图片",
+    "version": "1.0.1",
+    "description": "自动轮播视频和图片组件。播放视频时停止轮播，手动滑动swiper时视频停止播放",
+    "keywords": [
+        "vue",
+        "swiper",
+        "zhuge"
+    ]
+}

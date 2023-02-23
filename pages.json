@@ -1,0 +1,96 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"backgroundColor": "#8A8A8A"
+			}
+		}, {
+			"path": "pages/me/me",
+			"style": {
+				"navigationBarTitleText": "个人中心",
+				"enablePullDownRefresh": false
+			}
+
+		}
+
+	    ,{
+            "path" : "pages/publish/publish",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/commodity/commodity",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+            }
+            
+        }
+    ],
+	"tabBar": {
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/tabbar/home.png",
+				"selectedIconPath": "static/tabbar/c_home.png",
+				"text": "Home"
+			},
+			{
+				"pagePath": "pages/publish/publish",
+				"iconPath": "static/tabbar/publish.png",
+				"selectedIconPath": "static/tabbar/publish.png",
+				"text": ""
+			},
+			{
+				"pagePath": "pages/me/me",
+				"iconPath": "static/tabbar/person.png",
+				"selectedIconPath": "static/tabbar/c_person.png",
+				"text": "Me"
+			}
+		]
+	},
+	"subPackages": [{
+		"name": "subpacks",
+		"root": "subpacks",
+		"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+			{
+				"path": "login/login",
+				"style": {
+					"navigationBarTitleText": "亭好住用户登录"
+				}
+			}, {
+				"path": "registy/registy",
+				"style": {
+					"navigationBarTitleText": "亭好住用户注册"
+				}
+			}, {
+				"path": "manual/manual",
+				"style": {
+					"navigationBarTitleText": "用户协议"
+				}
+
+			}
+		]
+	}],
+	"preloadRule": {
+		"pages/index/index": {
+			"network": "all",
+			"packages": ["subpacks"]
+		}
+	},
+
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"uniIdRouter": {}
+}
